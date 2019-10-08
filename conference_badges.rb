@@ -1,9 +1,9 @@
+def badge_maker(speaker)
+ return "Hello, my name is #{speaker}."
+end
 
-def badge_maker(name)
-  badge = "Hello, my name is #{name}"
-  badge
-end  
+speakers_lineup = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
-def batch_badge_creator(array)
-  
-end  
+def batch_badge_creator(speakers_lineup)
+ speakers_lineup.collect {|speaker| badge_maker(speaker)}
+end
